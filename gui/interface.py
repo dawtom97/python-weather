@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import filedialog, ttk
 import pandas as pd
 
-
 def load_excel_file():
     file_path = filedialog.askopenfilename(
         title="Wybierz plik Excel",
@@ -33,7 +32,6 @@ def update_interface():
         display_data(df)
     except Exception as error:
         print(error)
-
 
 def generate_interface():
 

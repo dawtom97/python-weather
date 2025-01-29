@@ -8,7 +8,7 @@ def fetch_data():
     while True:
         weather = get_weather()
         save_to_excel(weather)
-        time.sleep(10)
+        time.sleep(30)
 
 def start():
     threading.Thread(target=fetch_data).start()
